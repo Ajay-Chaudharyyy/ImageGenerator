@@ -10,7 +10,7 @@ const router = require("./Router/UserRoutes")
 app.use(express.json());
 app.use(cors({
   origin: process.env.NODE_ENV === "production"
-    ? "https://image-generator-blush-eight.vercel.app/"   // ✅ Production frontend domain
+    ? "https://image-generator-blush-eight.vercel.app"   // ✅ Production frontend domain
     : "http://localhost:5173",             // ✅ Local frontend domain (Vite or 3000 for CRA)
   credentials: true                        // ✅ Allow cookies and credentials
 }));
