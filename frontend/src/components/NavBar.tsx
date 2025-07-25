@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { assets } from "../assets/assets"
 import { useAppContext } from "../Context/AppContext"
 import { useEffect, useRef, useState } from "react";
+import logo from "../../public/favicon.svg"
 
 
 const NavBar = () => {
@@ -47,8 +48,9 @@ const NavBar = () => {
     }
   return (
     <div className="w-full flex justify-between items-center py-4">
-        <Link to="/">
-        <img src={assets.logo} alt="" className="w-28 sm:w-32 lg:w-40"/>
+        <Link to="/" className="flex justify-center items-end gap-2">
+        <img src={logo} alt=""/>
+        <p className="text-lg font-semibold">DeepDraw</p>
         </Link>
 
 
